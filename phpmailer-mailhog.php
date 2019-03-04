@@ -18,9 +18,9 @@ if (! defined('WPINC')) {
     die;
 }
 
-add_action('phpmailer_init',  function pointToLocalSMTP(PHPMailer $phpMailer): void {
-    if (! defined('WP_ENV') || 'development' !== constant('WP_ENV') {
-        wp_die('PHPMailer MailHog should not be install on non-development environment. Re-run `$ composer require` with `--dev` flag.')
+add_action('phpmailer_init',  function (PHPMailer $phpMailer): void {
+    if (! defined('WP_ENV') || 'development' !== constant('WP_ENV')) {
+        wp_die('PHPMailer MailHog should not be install on non-development environment. Re-run `$ composer require` with `--dev` flag.');
     }
 
     $phpMailer->Host = '127.0.0.1';
