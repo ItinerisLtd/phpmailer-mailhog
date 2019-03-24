@@ -13,6 +13,8 @@ declare(strict_types=1);
 
 namespace Itineris\PHPMailer\MailHog;
 
+use PHPMailer;
+
 // If this file is called directly, abort.
 if (! defined('WPINC')) {
     die;
