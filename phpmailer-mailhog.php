@@ -5,7 +5,7 @@ declare(strict_types=1);
  * Plugin Name:     PHPMailer MailHog
  * Plugin URI:      https://github.com/itinerisltd/phpmailer-mailhog
  * Description:     Use MailHog on development environment.
- * Version:         0.1.0
+ * Version:         0.1.2
  * Author:          Itineris Limited
  * Author URI:      https://www.itineris.co.uk/
  * Text Domain:     phpmailer-mailhog
